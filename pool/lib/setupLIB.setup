@@ -6,6 +6,7 @@ if [[ "$OS" == "linux" ]]; then
         wget https://linuxmc.vercel.app/pool/lib/downloader.sh
 	bash downloader.sh
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	mkdir jars
 	cd ~/
 	brew install zenity
 
@@ -16,6 +17,7 @@ else
 	brew install wget
 	wget https://linuxmc.vercel.app/pool/lib/downloader.sh
 	bash downloader.sh
+	mkdir jars
 	cd ~/
 	brew install zenity
 
