@@ -3,7 +3,7 @@
 # Assign the first argument to a variable
 OS=$1
 if [[ "$OS" == "linux" ]]; then
-        wget https://linuxmc.vercel.app/pool/library/downloader.sh
+        wget https://linuxmc.vercel.app/linuxMC/library/downloader.sh
 	bash downloader.sh
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	mkdir jars
@@ -15,7 +15,7 @@ else
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.bash_profile && source ~/.bash_profile
 	brew install wget
-	wget https://linuxmc.vercel.app/pool/library/downloader.sh
+	wget https://linuxmc.vercel.app/linuxMC/library/downloader.sh
 	bash downloader.sh
 	mkdir jars
 	cd ~/
