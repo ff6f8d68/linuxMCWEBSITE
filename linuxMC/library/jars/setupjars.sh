@@ -1,5 +1,6 @@
-mkdir lwjgl
 mkdir minecraft
-cd ./lwjgl
-wget https://linuxmc.vercel.app/pool/lib/jars
+wget https://linuxmc.vercel.app/linuxMC/library/jars/lwjgl/lwjgl.zip
+unzip lwjgl.zip
+rm lwjgl.zip
 rm downloader.sh
+rm setupjars.sh
